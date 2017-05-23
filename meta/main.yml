@@ -1,0 +1,24 @@
+galaxy_info:
+  author: Stefan Horning
+  description: Role that installs the AWS inspector agent
+  company: Mediapeers GmbH
+  license: BSD
+
+  min_ansible_version: 1.8
+  github_branch: master
+
+  platforms:
+   - name: Linux
+     versions:
+     - all
+
+  galaxy_tags:
+    - aws
+    - cloud
+    - security
+    - auditing
+    - inspector
+    - agent
+    - linux
+
+dependencies: []
