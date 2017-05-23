@@ -20,7 +20,7 @@ Example playbook using this role:
 
     - hosts: servers
       roles:
-         - mediappers.aws-inspector
+         - mediapeers.aws-inspector
 
 ## License
 
