@@ -20,9 +20,14 @@
     name: awsagent
     enabled: yes
 
-- name: Show agent status
+- name: Get agent status
   shell: '/opt/aws/awsagent/bin/awsagent status'
   become: true
+  register: aws_agent_status
+
+- name: Output awsagent status
+  debug:
+    var: aws_agent_status.stdout
 
 - name: Cleanup install script
   file:
