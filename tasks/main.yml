@@ -1,4 +1,30 @@
 ---
 # tasks file for mediapeers.aws-inspector
 
-# TODO: install aws-inspector agent
+- name: Make sure system dependencies are met (libcurl3)
+  package:
+    name: libcurl3
+    state: present
+
+- name: Download aws inspector agent installation script
+  get_url:
+    url: '{{ aws_inspector_installer_url }}'
+    dest: '{{ aws_inspector_installer_script }}'
+
+- name: Execute the agent installer
+  shell: 'bash {{ aws_inspector_installer_script }}'
+  become: true
+
+- name: Enable awsagent on bootup
+  service:
+    name: awsagent
+    enabled: yes
+
+- name: Show agent status
+  shell: '/opt/aws/awsagent/bin/awsagent status'
+  become: true
+
+- name: Cleanup install script
+  file:
+    name: '{{ aws_inspector_installer_script }}'
+    state: absent

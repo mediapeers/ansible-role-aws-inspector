@@ -1,2 +1,5 @@
 ---
 # vars file for mediapeers.aws-inspector
+
+aws_inspector_installer_url:    'https://d1wk0tztpsntt1.cloudfront.net/linux/latest/install'
+aws_inspector_installer_script: '/tmp/aws_inspector_installer'
