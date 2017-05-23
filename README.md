@@ -1,6 +1,8 @@
 # AWS Inspector ansbile role
 
-Installs the AWS inspector agent on a Linux EC2 instance.
+Installs the [AWS inspector](https://docs.aws.amazon.com/inspector/latest/userguide/inspector_introduction.html) agent on a Linux EC2 instance.
+
+Follows the [AWS install docs]( https://docs.aws.amazon.com/inspector/latest/userguide/inspector_agents-on-linux.html#install-linux).
 
 ## Requirements
 
