@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mediapeers/ansible-role-aws-inspector.svg?branch=master)](https://travis-ci.org/mediapeers/ansible-role-aws-inspector)
+[![Build Status](https://travis-ci.com/mediapeers/ansible-role-aws-inspector.svg?branch=master)](https://travis-ci.com/mediapeers/ansible-role-aws-inspector)
 
 # AWS inspector Ansible role
 
